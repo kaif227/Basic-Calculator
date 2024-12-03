@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="lmg3.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="calculator-container">
+        <div class="head"><h1>Basic Calculator</h1></div>
+        <div class="calculator">
+            <div id="display" class="display">0</div>
+            <div class="buttons">
+                <button class="button clear" onclick="clearDisplay()">C</button>
+                <button class="button operator" onclick="appendToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+                <button class="button operator" onclick="appendToDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+                <button class="button operator" onclick="appendToDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+                <button class="button" onclick="appendToDisplay('9')">9</button>
+                <button class="button" onclick="appendToDisplay('8')">8</button>
+                <button class="button" onclick="appendToDisplay('7')">7</button>
+                <button class="button operator" onclick="appendToDisplay('+')"><i class="fa-solid fa-plus"></i></button>
+                <button class="button" onclick="appendToDisplay('6')">6</button>
+                <button class="button" onclick="appendToDisplay('5')">5</button>
+                <button class="button" onclick="appendToDisplay('4')">4</button>
+                <button class="button" onclick="appendToDisplay('3')">3</button>
+                <button class="button" onclick="appendToDisplay('2')">2</button>
+                <button class="button" onclick="appendToDisplay('1')">1</button>
+                <button class="button zero" onclick="appendToDisplay('0')">0</button>
+                <button class="button decimal" onclick="appendToDisplay('.')">.</button>
+                <button class="button equal" onclick="calculateResult()"><i class="fa-solid fa-equals"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
